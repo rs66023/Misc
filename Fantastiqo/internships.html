@@ -17,7 +17,7 @@
 <script>
     function ShowSelection() {
         var field = document.getElementById("InternshipSelect");
-        document.getElementById("ShowSelect").innerHTML = field;
+
     }
 </script>
 
@@ -56,27 +56,21 @@
     <!--Internship Signup Form-->
     <div class="container justify-content-center w3-padding-24">
         <!--Dropdown form stating the options available-->
-        <div class="dropdown">
-            <p>We train students and freshers and can provide training and short-term intern opportunities in the following fields. Select a career and be prepared to start your future! Keep in mind that opportunities and offers are subject to availability.</p>
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" onclick="ShowSelection()">Domain available</button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" label="Graphic Design" id="InternshipSelect">Graphic Design</a>
-                <a class="dropdown-item" label="Social Media Marketing" id="InternshipSelect">Social Media Marketing</a>
-                <a class="dropdown-item" label="Digital Marketing" id="InternshipSelect">Digital Marketing</a>
-                <a class="dropdown-item" label="Human Resources" id="InternshipSelect">Human Resources</a>
-                <a class="dropdown-item" label="Web Development" id="InternshipSelect">Web Development</a>
-                <a class="dropdown-item" label="Business Development" id="InternshipSelect">Business Development</a>
-                <a class="dropdown-item" label="Video Blogging" id="InternshipSelect">Video Blogging</a>
-                <a class="dropdown-item" label="Content Writing" id="InternshipSelect">Content Writing</a>
-                <a class="dropdown-item" label="Public Relations" id="InternshipSelect">Public Relations</a>
-
+        <form class="w3-padding-32" method="POST" id="FormApp">
+            <div class="form-group">
+                <select name="Fields" id="InternshipSelect" form="FormApp" required>
+                    <option value="Graphic Design">Graphic Design</option>
+                    <option value="Social Media Marketing">Social Media Marketing</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Human Resources">Human Resources</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Business Development">Business Development</option>
+                    <option value="Video Blogging">Video Blogging</option>
+                    <option value="Content Writing">Content Writing</option>
+                    <option value="Public Relations">Public Relations</option>
+    
+                </select>
             </div>
-            <p id="ShowSelect">Hello</p>
-        </div>
-
-        <!--Signup Form-->
-        <label></label>
-        <form class="w3-padding-32" method="POST">
             <div class="form-group">
                 <label for="AppName">Your Name:</label>
                 <input type="text" class="form-control" placeholder="Enter your Name" id="AppName"></input>
@@ -94,7 +88,7 @@
                 <input type="file" class="custom-file-input" id="AppResume"></input>
                 <label for="AppResume" class="custom-file-label">Choose file:</label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="ShowSelection()">Submit</button>
         </form>
     </div>
     <!--Footer-->
@@ -137,5 +131,7 @@
         using solar power, and planting more trees in our surroundings. Doing this will not only save the environment but also improve the quality of life for both animal and plant species and save them from going extinct.
     </footer>
 </body>
+
+</html>
 
 </html>
