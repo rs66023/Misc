@@ -14,6 +14,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<script>
+    function ShowSelection() {
+        var field = document.getElementById("InternshipSelect");
+        document.getElementById("ShowSelect").innerHTML = field;
+    }
+</script>
+
 <style>
     body,
     html {
@@ -51,20 +58,44 @@
         <!--Dropdown form stating the options available-->
         <div class="dropdown">
             <p>We train students and freshers and can provide training and short-term intern opportunities in the following fields. Select a career and be prepared to start your future! Keep in mind that opportunities and offers are subject to availability.</p>
-            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Domain available</button>
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" onclick="ShowSelection()">Domain available</button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Graphic Design</a>
-                <a class="dropdown-item" href="#">Social Media Marketing</a>
-                <a class="dropdown-item" href="#">Digital Marketing</a>
-                <a class="dropdown-item" href="#">Human Resources</a>
-                <a class="dropdown-item" href="#">Web Development</a>
-                <a class="dropdown-item" href="#">Business Development</a>
-                <a class="dropdown-item" href="#">Video Blogging</a>
-                <a class="dropdown-item" href="#">Content Writing</a>
-                <a class="dropdown-item" href="#">Public Relations</a>
+                <a class="dropdown-item" label="Graphic Design" id="InternshipSelect">Graphic Design</a>
+                <a class="dropdown-item" label="Social Media Marketing" id="InternshipSelect">Social Media Marketing</a>
+                <a class="dropdown-item" label="Digital Marketing" id="InternshipSelect">Digital Marketing</a>
+                <a class="dropdown-item" label="Human Resources" id="InternshipSelect">Human Resources</a>
+                <a class="dropdown-item" label="Web Development" id="InternshipSelect">Web Development</a>
+                <a class="dropdown-item" label="Business Development" id="InternshipSelect">Business Development</a>
+                <a class="dropdown-item" label="Video Blogging" id="InternshipSelect">Video Blogging</a>
+                <a class="dropdown-item" label="Content Writing" id="InternshipSelect">Content Writing</a>
+                <a class="dropdown-item" label="Public Relations" id="InternshipSelect">Public Relations</a>
 
             </div>
+            <p id="ShowSelect">Hello</p>
         </div>
+
+        <!--Signup Form-->
+        <label></label>
+        <form class="w3-padding-32" method="POST">
+            <div class="form-group">
+                <label for="AppName">Your Name:</label>
+                <input type="text" class="form-control" placeholder="Enter your Name" id="AppName"></input>
+            </div>
+            <div class="form-group">
+                <label for="InternAppEmail">Email Address:</label>
+                <input type="email" class="form-control" placeholder="Enter your Email" id="InternAppEmail"></input>
+            </div>
+            <div class="form-group">
+                <label for="AppNumber">Contact Number:</label>
+                <input type="tel" class="form-control" placeholder="Phone Number" id="AppNumber">
+            </div>
+            <label for="AppResume">Upload your Resume:</label>
+            <div class="form-group custom-file w3-padding-32">
+                <input type="file" class="custom-file-input" id="AppResume"></input>
+                <label for="AppResume" class="custom-file-label">Choose file:</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
     <!--Footer-->
     <footer style="background: #2d3246; padding: 16px;">
