@@ -57,11 +57,13 @@
         </div>
     </nav>
     <!--Internship Signup Form-->
-    <div class="container justify-content-center w3-padding-24">
-        <!--Dropdown form stating the options available-->
-        <form class="w3-padding-32" method="POST" id="FormApp">
-            <div class="form-group">
-                <select name="Fields" id="InternshipSelect" form="FormApp" required>
+    <div style="background-image: url('internship_page.jpg'); height: 600px;"><br>
+
+        <div class="container justify-content-center w3-padding-24" style="border-style:solid; border-width: thick; border-color: #cccccc;">
+            <!--Dropdown form stating the options available-->
+            <form class="w3-padding-32 " method="POST" id="FormApp">
+                <div class="form-group ">
+                    <select name="Fields" id="InternshipSelect" form="FormApp" required>
                     <option value="Graphic Design">Graphic Design</option>
                     <option value="Social Media Marketing">Social Media Marketing</option>
                     <option value="Digital Marketing">Digital Marketing</option>
@@ -73,26 +75,27 @@
                     <option value="Public Relations">Public Relations</option>
     
                 </select>
-            </div>
-            <div class="form-group">
-                <label for="AppName">Your Name:</label>
-                <input type="text" class="form-control" placeholder="Enter your Name" id="AppName"></input>
-            </div>
-            <div class="form-group">
-                <label for="InternAppEmail">Email Address:</label>
-                <input type="email" class="form-control" placeholder="Enter your Email" id="InternAppEmail"></input>
-            </div>
-            <div class="form-group">
-                <label for="AppNumber">Contact Number:</label>
-                <input type="tel" class="form-control" placeholder="Phone Number" id="AppNumber">
-            </div>
-            <label for="AppResume">Upload your Resume:</label>
-            <div class="form-group custom-file w3-padding-32">
-                <input type="file" class="custom-file-input" id="AppResume"></input>
-                <label for="AppResume" class="custom-file-label">Choose file:</label>
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="ShowSelection()">Submit</button>
-        </form>
+                </div>
+                <div class="form-group">
+                    <label for="AppName">Your Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter your Name" id="AppName"></input>
+                </div>
+                <div class="form-group">
+                    <label for="InternAppEmail">Email Address:</label>
+                    <input type="email" class="form-control" placeholder="Enter your Email" id="InternAppEmail"></input>
+                </div>
+                <div class="form-group">
+                    <label for="AppNumber">Contact Number:</label>
+                    <input type="tel" class="form-control" placeholder="Phone Number" id="AppNumber">
+                </div>
+                <label for="AppResume">Upload your Resume:</label>
+                <div class="form-group custom-file w3-padding-32">
+                    <input type="file" class="custom-file-input" id="AppResume"></input>
+                    <label for="AppResume" class="custom-file-label">Choose file:</label>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="ShowSelection()">Submit</button>
+            </form>
+        </div>
     </div>
     <!--Footer-->
     <footer style="background: #2d3246; padding: 16px;">
