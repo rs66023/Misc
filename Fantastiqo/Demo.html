@@ -1,0 +1,222 @@
+<!--Made by Rahul Singh-->
+<!DOCTYPE html>
+<html>
+<title>Fantastiqo! The place where talent blooms</title>
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="en">
+<meta name="Description" content="The one stop solution for digital marketing, graphic designing,video blogging,social media marketing, business development, public relations and content delivery">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+    
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark w3-padding-16">
+        <!-- brand -->
+        <a class="navbar-brand w3-button w3-wide text-light" href="#Home">Fantastiqo</a>
+
+        <div class="nav navbar-nav ml-auto w3-hide-small">
+            <form class="form-inline" action="index.js">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-light" type="submit">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+            <a class="w3-bar-item w3-button text-light" href="#Home">Home</a>
+            <a class="w3-bar-item w3-button text-light" href="#About">About</a>
+            <a class="w3-bar-item w3-button text-light" href="#Work">Work</a>
+            <a class="w3-bar-item w3-button text-light" href="#Skills">Skills</a>
+            <a class="w3-bar-item w3-button text-light" href="#Internship">Internship</a>
+            <a class="w3-bar-item w3-button text-light" href="#Contact">Contact Us</a>
+        </div>
+    </nav>
+
+
+    <div class="w3-padding-16" style="padding-left: 10%; padding-right: 10%;background-color: honeydew;">
+        <div class="container" id="Heading" style="border-style: solid; border-color: grey;">
+            <h3 class="text-center">Headings</h3>
+            <p class="text-center font-weight-bold">HTML Headings are titles or subtitles. They range from h1 to h6, and their size reduces accordingly</p>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </div>
+
+        <div class="container" id="Paragraph" style="padding: 10%;border-style: solid; border-color: grey;border-top: none;">
+            <h3 class="text-center">Paragraphs</h3>
+            <p class="text-center">Paragraphs are used to display large blocks of text. The p tag is used for paragraphs, text inside respective tags splits into individual paragraphs and ignores split lines inside the source code.</p>
+            <p>This is a sample paragraph</p>
+            <p>This is another one!</p>
+            <p>The br tag is used for split lines in text.</p>
+
+            <p>This is sample text.<br> With a br tag.</p>
+        </div>
+        <div class="container" id="Lists" style="padding: 10%;border-style: solid; border-color: grey;border-top: none;">
+            <h3 class="text-center">Lists</h3>
+            <h4>Different types of lists in HTML</h4>
+            <h5>Unordered lists</h5>
+            <p>Unordered lists, created with a ul tag show a list without a specific order, ie a bulleted list.<br>The 'list-style-type' element is used to define the type of bullet list.</p>
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <h5>Default unordered list with disc markers</h5>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Unordered list with no markers</h5>
+                    <ul style="list-style-type:none;">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Unordered list with circle markers</h5>
+                    <ul style="list-style-type:circle;">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Unordered list with square markers</h5>
+                    <ul style="list-style-type:square;">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ul>
+                </div>
+            </div>
+            <p>A nested list is one with list items contained within other list items.<br>This can be achieved by opening another ul and li tag withing an existing li.</p>
+            <h5>Ordered lists</h5>
+            <p>Ordered lists are lists with each item tagged with numbers or letters.</p>
+            <h6>Types of ordered lists</h6>
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Default ordered list with numbers</h5>
+                    <ol>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ol>
+                </div>
+                <div class="col-lg-4">
+                    <h5>List ordered with alphabets</h5>
+                    <ol type="A">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ol>
+                </div>
+                <div class="col-lg-4">
+                    <h5>List ordered with Roman Numerals</h5>
+                    <ol type="I">
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                        <li>Item 5</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="Formatting" style="padding: 10%; border-style: solid; border-color: grey;border-top: none;">
+            <h3>Formatting</h3>
+            <p>HTML Contains multiple tags with which to format or style text.</p>
+            <ol>
+                <li>b tag - Bold text - <b>For example</b></li>
+                <li>strong tag - Important text - <strong>For example</strong></li>
+                <li>i tag - italic text - <i>For example</i></li>
+                <li>em tag - Emphasized text - <em>For example</em></li>
+                <li>mark tag - Marked text - <mark>For example</mark></li>
+                <li>small tag - Smaller text - <small>For example</small></li>
+                <li>del tag - Deleted text - <del>For example</del></li>
+                <li>ins tag - Inserted text - <ins>For example</ins></li>
+                <li>sub tag - Subscript text - <sub>For example</sub></li>
+                <li>sup tag - Superscript text - <sup>For example</sup></li>
+
+            </ol>
+        </div>
+        <div class="container" id="Hyperlink" style="padding: 10%;border-style: solid; border-color: grey;border-top: none;">
+            <h3 class="text-center">Hyperlinks</h3>
+            <p>Hyperlinks are made with an 'a' tag, and a defined link to which it redirects.</p>
+            <a href="Google.com">Google.com</a>
+
+        </div>
+    </div>
+    <!--Footer-->
+    <footer style="background: #2d3246; padding: 16px;">
+        <div class="container">
+            <div class="row text-center text-light text-md-left">
+                <div class="col-sm-4 ">
+                    <h4>Main Menu</h4>
+                    <a href=" " class="text-light font-weight-bold">HOME</a><br>
+                    <a href=" " class="text-light font-weight-bold">ABOUT</a><br>
+                    <a href=" " class="text-light font-weight-bold">WORK</a><br>
+                    <a href=" " class="text-light font-weight-bold">SKILLS</a><br>
+                    <a href=" " class="text-light font-weight-bold">INTERNSHIP</a><br>
+                    <a href=" " class="text-light font-weight-bold">CONTACT US</a><br>
+                </div>
+                <div class="col-sm-4 ">
+                    <h4>Work From Home</h4><br><br>
+                    <h5>E-mail:</h5>
+                    <a href="mailto: fantastiqo64@gmail.com">fantastiqo64@gmail.com</a>
+                </div>
+
+                <div class="col-sm-4 ">
+                    <h4>Get Social</h4>
+                    <h7>Follow us on:</h7><br>
+                    <h4>
+                        <a href="https://www.facebook.com/fantastiqo64"><i class="fa fa-facebook-official text-light" ></i></a>
+                        <a href="https://www.instagram.com/fantastiqoofficial/"><i class="fa fa-instagram text-light"></i></a>
+                        <a href="https://www.linkedin.com/company/fantastiqoofficial"><i class="fa fa-linkedin text-light"></i></a>
+                        <a href="https://www.youtube.com/channel/UC5pxWyL6ZsOLI16IgDosb0A"><i class="fa fa-youtube-play text-light"></i></a>
+                        <a href="https://twitter.com/fantastiqo64"><i class="fa fa-twitter text-light"></i></a>
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--The secondary yellow footer-->
+    <footer class="small text-light" style="background:gold; padding: 16px;">
+        It is hard to believe but we don't always have to do something huge to save the environment. Every person, even a child can contribute to the world's "Save the Environment" goal. We can together do so by reducing the plastic usage, saving electricity,
+        using solar power, and planting more trees in our surroundings. Doing this will not only save the environment but also improve the quality of life for both animal and plant species and save them from going extinct.
+    </footer>
+</body>
+
+</html>

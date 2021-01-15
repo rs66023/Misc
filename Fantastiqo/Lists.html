@@ -1,0 +1,140 @@
+<!--Made by Rahul Singh-->
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorials | Lists</title>
+<meta charset="UTF-8">
+<meta http-equiv="content-language" content="en">
+<meta name="Description" content="The one stop solution for digital marketing, graphic designing,video blogging,social media marketing, business development, public relations and content delivery">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    body,
+    html {
+        height: 100%;
+        line-height: 1.8;
+    }
+    
+    .w3-bar .w3-button {
+        padding: 16px;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark w3-padding-16">
+        <!-- brand -->
+        <div class="nav navbar-nav ml-auto w3-hide-small">
+            <ul class="pagination" style="background-color: transparent;">
+                <li class="page-item"><a class="page-link" href="Tutorial.html">Introduction</a></li>
+                <li class="page-item"><a class="page-link" href="Headings.html">Headings</a></li>
+                <li class="page-item"><a class="page-link" href="Paragraphs.html">Paragraphs</a></li>
+                <li class="page-item active"><a class="page-link" href="Lists.html">Lists</a></li>
+                <li class="page-item"><a class="page-link" href="Hyperlinks.html">Hyperlinks</a></li>
+                <li class="page-item"><a class="page-link" href="CSSWIKI.html">CSS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-lg w3-padding-16">
+        <h3>HTML Lists</h3>
+        <p>Lists as expected are ways to display information in a neat and orderly fashion, HTML has multiple ways with which lists can be displayed.</p>
+        <p>Lists are displayed with nested tags. That means a tag within another tag. Ordered lists go with the 'ol' tag, and unordered go with 'ul', with individual list items in both displayed with 'li'</p>
+        <h4>Different types of lists in HTML</h4>
+        <h5>Unordered lists</h5>
+        <p>Unordered lists, created with a ul tag show a list without a specific order, ie a bulleted list.<br>The 'list-style-type' element is used to define the type of bullet list.</p>
+        <div class="row">
+
+            <div class="col-lg-3">
+                <h5>Default unordered list with disc markers</h5>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Unordered list with no markers</h5>
+                <ul style="list-style-type:none;">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Unordered list with circle markers</h5>
+                <ul style="list-style-type:circle;">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5>Unordered list with square markers</h5>
+                <ul style="list-style-type:square;">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </div>
+        </div>
+        <p>A nested list is one with list items contained within other list items.<br>This can be achieved by opening another ul and li tag withing an existing li.</p>
+        <h5>Ordered lists</h5>
+        <p>Ordered lists are lists with each item tagged with numbers or letters.</p>
+        <h6>Types of ordered lists</h6>
+        <div class="row">
+            <div class="col-lg-4">
+                <h5>Default ordered list with numbers</h5>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+            </div>
+            <div class="col-lg-4">
+                <h5>List ordered with alphabets</h5>
+                <ol type="A">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+            </div>
+            <div class="col-lg-4">
+                <h5>List ordered with Roman Numerals</h5>
+                <ol type="I">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer style="background: #2d3246; padding: 16px; height: 100px;">
+        <div class="container">
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
